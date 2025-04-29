@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <title>Asteroid Breaker - TheBricksGame</title>
+  <link rel="shortcut icon" href="images/asteroid_favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+  <script src="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://common.olemiss.edu/_js/sweet-alert/sweet-alert.css">
+</head>
+<body onload="drawIt()">
+
+  <div class="astronaut"><img src="images/astronaut.png"></div>
+  <div class="planet"><img src="images/planet.png"></div>
+  <div class="earth"><img src="images/earth.png"></div>
+  <div class="firedAsteroid"><img src="images/fired_asteroid.png"></div>
+  <!-- Background animated stars -->
+  <canvas id="starCanvas"></canvas>
+
+  <div class="all">
+    <canvas id="canvas" width="700" height="470"></canvas>
+  </div>
+
+  <div class="controls">
+    <button onclick="startGame()">Start</button>
+    <button id="pause" onclick="pauseGame()">Pause</button>
+    <button onclick="stopGame()">Stop</button>
+    <button onclick="resetGame()">Reset Result</button>
+    <button onclick="showResult()">Show Result</button>
+    <select id="difficulty" onchange="setDifficulty(this.value)">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div>
+
+  <p>Time: <mark id="cas">00:00</mark> Score: <mark id="tocke">0</mark></p>
+
+  <script src="js/bricks.js"></script>
+  <script src="js/stars.js"></script> <!-- New stars animation script -->
+</body>
+</html>
