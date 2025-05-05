@@ -9,3 +9,7 @@ This is my space-themed "Bricks" game project, built using HTML, CSS, and JavaSc
 <h3>This image shows sweetalert after missing the star</h3>
 
 ![image](https://github.com/user-attachments/assets/5dd1984c-bb99-4000-b9a5-2b54e01a53d1)
+
+
+<h3>This image shows sweetalert after missing the star</h3>
+![image](https://github.com/user-attachments/assets/035f758b-a45e-4b55-a0df-23020cb8369b)
